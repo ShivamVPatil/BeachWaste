@@ -48,7 +48,7 @@ def main():
         print(data)
         pred = get_prediction(data=data, model=rf_model)
 
-         st.write(f"The predicted severity is:  {pred[0]}")
+        st.write(f"The predicted severity is:  {pred[0]}")
 
 
 if __name__ == '__main__':
