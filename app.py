@@ -15,7 +15,7 @@ st.set_page_config(page_title="BeachWaste Prediction App",
 
 #creating option list for dropdown menu
 options_season = ['Rainy','Non-Rainy']
-options_festivak = ['No Festival','Non-Rainy','Ganesh Chaturthi','Navratri','Diwali','Chat Pooja','Holika','Holi','Narali Pornima','Narali Pornima','Dahi Handi','New Year']
+options_festival = ['No Festival','Non-Rainy','Ganesh Chaturthi','Navratri','Diwali','Chat Pooja','Holika','Holi','Narali Pornima','Narali Pornima','Dahi Handi','New Year']
 
 
 
@@ -33,6 +33,8 @@ def main():
         month = st.slider("Month: ", 0, 12, value=0, format="%d")
         season = st.selectbox("Select Season: ", options=options_season)
         festival = st.selectbox("Select Festival: ", options = options_festival)
+        
+        
         submit = st.form_submit_button("Predict")
 
 
