@@ -40,7 +40,7 @@ def main():
 
 
     if submit:
-        season = origial_encoder(season, options_season)
+        season = original_encoder(season, options_season)
         festival = original_encoder(festival, options_festival)
         
 
