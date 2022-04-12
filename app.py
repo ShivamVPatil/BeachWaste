@@ -29,7 +29,7 @@ def main():
     with st.form('prediction_form'):
 
         st.subheader("Enter the input for following features:")
-        day_of_week =st.slider("Day: ", 1,7, value=0, format="%d") 
+        day_of_week =st.slider("Day: ", 1,31, value=0, format="%d") 
         month = st.slider("Month: ", 0, 12, value=0, format="%d")
         season = st.selectbox("Select Season: ", options=options_season)
         festival = st.selectbox("Select Festival: ", options = options_festival)
