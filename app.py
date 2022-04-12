@@ -24,7 +24,7 @@ options_festival = ['No Festival','Non-Rainy','Ganesh Chaturthi','Navratri','Diw
 features = ['SEASON','FESTIVAL','DAY','MONTH']
 
 
-st.markdown("<h1 style='text-align: center;'>Accident Severity Prediction App 🚧</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Beach Waste Generation Prediction App 🗑️</h1>", unsafe_allow_html=True)
 def main():
     with st.form('prediction_form'):
 
@@ -50,7 +50,7 @@ def main():
         print(data)
         pred = get_prediction(data=data, model=rf_model)
 
-        st.write(f"The predicted weight is:  {pred[0]}")
+        st.write(f"The predicted weight is:  {pred[0]} kgs")
 
 
 if __name__ == '__main__':
